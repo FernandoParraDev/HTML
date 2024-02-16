@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 
+        Aquí van metadatos que no se renderizaran, sino que aportaran
+        información a la pagina
+        -->
+
+        <meta charset="utf-8" > <!-- codificación: Ayuda a que se muestren los acentos y emojis-->
+        <meta name="viewport" content="width=device-width"> <!-- Esto hace que se adapte a cada dispositivo-->
+        <title> Portfolio de Fernando</title> <!-- Esto aparece en la pestaña de internet, muy importante-->
+
+        <meta name="description" content="Pagina de prueba de Portfolio de Fernando">
+
+        <!-- OPEN GRAPH-->
+        <!-- Esto sirve para cuando se comparta el enlace aparezca una vista previa-->
+
+        <meta property="og:title" content="Portfolio de Fernando">
+        <meta property="og:description" content="Pagina de prueba de Portfolio de Fernando">
+        <meta property="og:image" content="/images/prueba.jpg">
+
+        <link rel="alternate" href="https://midu.dev/en" hreflang="es-GB">
+
+        <meta name="robots" content="index, follow">
+        <meta color="theme-color" content="#09f"> <!-- hace que se pinte arriba en la pantalla en los telefonos-->
+    
+        <link rel="icon" type="image/jpg" href="/images/prueba.jpg"> <!-- este es el icono de la pestaña-->
+    
+        <style>
+            body {
+                background-color:rgb(240, 223, 239)
+            }
+        </style>
+
+    </head>
+
+<body>
+    <header>
+        <h1>Portfolio de Fernando</h1>
+
+        <nav>
+            <a href="#Experiencia">Experiencia</a>
+            <a href="#Proyectos">Proyectos</a>
+            <!--Enlaces Internos y externos-->
+            <a href="#https://twitch.tv/midudev" target="_blank"
+            rel="noreferrer">twitch</a>
+
+        </nav>
+    </header>
+
+<main>
+<p> Estudiante de ingenieria comercial, con conocimientos 
+en <strong>Python, R, Stata y Base de datos</strong></p> 
+
+<h2 id="Experiencia"> Experiencia </h2>
+
+<ul>
+    <li class="list-items"> Arauco 2023</li>
+    <li class="list-items"> John Deere 2023</li>
+    <li class="list-items"> Municipalidad 2022</li>
+</ul>
+
+<!-- Este es un comentario en HTML. -->
+<!-- Existen elementos de reemplazo que no son necesarios
+     cerrar, uno de ellos son las imagenes, o los input-->
+
+
+<!--
+     tittle aparece cuando el cursor se pone sobre la imagen,
+     y alt sirve par ciegos o ayuda a las busquedas en google.
+    Las comillas son opcionales, son obligatorias si se ocupa un espacio,
+    pero es recomendable ocuparlas siempre.
+    El atributo id es un atributo global, cuyo valor solo lo puede tener 1 elemento
+     -->
+<img 
+id="photo-image"
+width="200"
+height="250"
+tittle= "Logo de Wall street silver"
+alt ="Logo de Wall street silver" 
+src="/images/prueba.jpg"
+>
+
+<input  type="range">
+<!-- Al escribir type= muestra todos los tipos -->
+
+<h2 id="Proyectos"> Proyectos realizados "Presuntamente"</h2>
+
+<aside>
+    <header>
+        <h3> Mis tecnologias Favoritas</h3>
+    </header>
+<!-- ol es para listas ordenadas-->
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Node.js</li>
+    </ol>
+
+</aside>
+
+<section>
+    <article> <!-- A la hora de hacer un article este debe ser un parrafo que se pueda entender por si solo-->
+        <header>
+            <h4>Sitio web corporativo</h4>
+        </header>
+        <p>
+            Desarrollo de un sitio web conporativo con una interfaz amigable
+            y moderna
+        </p>
+        <footer>
+            <small> tecnologias utilizadas: HTML, Javascript, CSS</small>
+        </footer>
+
+    </article>
+</section>
+
+<section>
+    <article> <!-- A la hora de hacer un article este debe ser un parrafo que se pueda entender por si solo-->
+        <header>
+            <h4>Sitio web corporativo</h4>
+        </header>
+        <p>
+            Desarrollo de un sitio web conporativo con una interfaz amigable
+            y moderna
+        </p>
+        <footer>
+            <small> tecnologias utilizadas: HTML, Javascript, CSS</small>
+        </footer>
+
+    </article>
+</section>
+
+<section>
+    <article> <!-- A la hora de hacer un article este debe ser un parrafo que se pueda entender por si solo-->
+        <header>
+            <h4>Sitio web corporativo</h4>
+        </header>
+        <p>
+            Desarrollo de un sitio web conporativo con una interfaz amigable
+            y moderna
+        </p>
+        <footer>
+            <small> tecnologias utilizadas: HTML, Javascript, CSS</small>
+        </footer>
+
+    </article>
+</section>
+
+<section>
+    <h2>Formulario de Contacto</h2>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Fernando Parra" required>
+            </div>
+            <div>
+            <label> Email:
+                <input type="email" name="email"
+                placeholder="fernando.parra@uc.cl" required>
+            </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Adicional</legend>
+            <div>
+            <label> telefono:
+                <input 
+                type="tell" 
+                name="telefono"
+                required>
+            </label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar Contacto">
+    </form>
+</section>
+
+</main>
+
+<footer>
+    Copyright 2023 - El Portfolio más bello del mundo
+
+    <a href="mailto:fernando.parra@uc.cl">Enviame un correo</a>
+    <a href="tel:+56923231">Llamar por telefono</a>
+    <a href="whatsapp://send?text=Hola Mundo">Enviar mensaje</a>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
